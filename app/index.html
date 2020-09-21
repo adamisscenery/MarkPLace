@@ -18,28 +18,29 @@
             <div class="container">
                 <div class="header__top-inner">
                     <a class="header__top-logo" href="#">
-                        <img class="header__top-logo-1" src="images/logo.png" alt="martplace">
+                        <img class="header__top-logo" src="images/logo.png" alt="martplace">
                         <img src="images/logo-text.png" alt="martplace">
                     </a>
                     <div class="header__top-box">
                         <a class="header__top-link" href="">Become a Seller</a>
-                        <a class="header__top-link-notifications" href="#">
+
+                        <a class="header__top-left" href="#">
                             <span class="lnr lnr-alarm header__top-notifications header-icons"></span>
                         </a>
                         
-                        <a class="header__top-link-messages" href="#">
+                        <a class="header__top-center" href="#">
                             <span class="lnr lnr-envelope header__top-messages header-icons"></span>
                         </a>
 
-                        <a class="header__top-link-basket" href="#">
+                        <a class="header__top-right" href="#">
                             <span class="lnr lnr-cart header__top-basket header-icons"></span>
                         </a>
 
                         <div class="header__top-user">
                             <a class="header__top-user-link" href="#">
-                                <img class="header__top-user-photo" src="images/user.png" alt="avatar">
-                                <div class="header__top-user-name">Taofiq Hakim
-                                    <span class="header__top-user-price">
+                                <img class="header__top-photo" src="images/user.png" alt="avatar">
+                                <div class="header__top-name">Taofiq Hakim
+                                    <span class="header__top-price">
                                         $20.45
                                     </span>
                                 </div>
@@ -72,8 +73,8 @@
 
                     <div class="header__bottom-search">
                         <form>
-                            <label class="header__bottom-label visually-hidden" name="search"></label>
-                            <input class="header__bottom-search-input" type="search"
+                            <label class="header__bottom-label visually-hidden" for="header__bottom-label"></label>
+                            <input id="header__bottom-label" class="header__bottom-search-input" type="search"
                                 placeholder="Search product here..." required name="product">
                             <button class="header__bottom-btn" type="submit">
                                 <span class="lnr lnr-magnifier header__bottom-search-icon"></span>
@@ -89,24 +90,34 @@
 
     <main>
 
-        <section class="search">
+        <section class="main-search">
             <div class="container">
-                <div class="search__inner">
-                    <div class="search__inner-title">Create Your Own</div>
-                    <div class="search__inner-subtitle">Digital Product Marketplace</div>
-                    <div class="search__inner-text">MartPlace is the most powerful, & customizable template for Easy
-                        Digital Downloads Products</div>
-                    <div class="search__inner-link">
-                        <a class="search__inner-link-1 links" href="#">View All Products</a>
-                        <a class="search__inner-link-2 links" href="#">Popular Products</a>
+                <div class="main-search__inner">
+                    <div class="main-search__inner-title">
+                        Create Your Own
                     </div>
-                    <div class="search__inner-block">
+
+                    <div class="main-search__inner-subtitle">
+                        Digital Product Marketplace
+                    </div>
+
+                    <div class="main-search__inner-text">
+                        MartPlace is the most powerful, & customizable template for Easy
+                        Digital Downloads Products
+                    </div>
+
+                    <div class="main-search__link">
+                        <a class="main-search__link-1 links" href="#">View All Products</a>
+                        <a class="main-search__link-2 links" href="#">Popular Products</a>
+                    </div>
+
+                    <div class="main-search__block">
                         <form>
-                            <label class="visually-hidden" name="search"></label>
-                            <input class="search__inner-block-input" type="search" for="search__inner-block-input"
+                            <label class="main-search__block-label visually-hidden" for="main-search__block-label"></label>
+                            <input class="main-search__block-input" type="search" id="main-search__block-label"
                                 placeholder="Search your products" required name="product">
-                            <div class="search__inner-block-box">
-                                <select class="search__inner-block-select" name="categories">
+                            <div class="main-search__block-box">
+                                <select class="main-search__block-select" name="categories">
                                     <option value="All Categories">All Categories</option>
                                     <option value="WordPress">WordPress</option>
                                     <option value="PLugins">Plugins</option>
@@ -114,25 +125,26 @@
                                     <option value="Joomla">Joomla</option>
                                     <option value="PSD">PSD</option>
                                 </select>
-                                <span class="lnr lnr-chevron-down search__inner-block-arrow"></span>
+                                <span class="lnr lnr-chevron-down main-search__block-arrow"></span>
                             </div>
                         </form>
-                        <button class="search__inner-block-btn">Search Now</button>
+                        <button class="main-search__block-btn">Search Now</button>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="info">
+        <section class="about-info">
             <div class="container">
-                <div class="info__inner">
+                <div class="about-info__inner">
 
-                    <div class="info__inner-item info__inner-item-1">
-                        <div class="info__inner-block">
-                            <div class="info__inner-block-img info__inner-block-img-1"
+                    <div class="about-info__item about-info__item-1">
+                        <div class="about-info__block">
+                            <div class="about-info__block-img about-info__block-img-1"
                                 style="background-image: url(images/info-1.png);"></div>
-                            <div class="info__inner-block-title">Best UX Research</div>
-                            <div class="info__inner-block-text">
+                            <div class="about-info__block-title">Best UX Research</div>
+                            <div class="about-info__block-text">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                 the mattis, leo quam aliquet diam
                                 congue is laoreet elit metus.
@@ -140,12 +152,12 @@
                         </div>
                     </div>
 
-                    <div class="info__inner-item info__inner-item-center">
-                        <div class="info__inner-block">
-                            <div class="info__inner-block-img info__inner-block-img-2"
+                    <div class="about-info__item about-info__item-center">
+                        <div class="about-info__inner-block">
+                            <div class="about-info__block-img about-info__block-img-2"
                                 style="background-image: url(images/info-2.png);"></div>
-                            <div class="info__inner-block-title">Fully Responsive</div>
-                            <div class="info__inner-block-text">
+                            <div class="about-info__block-title">Fully Responsive</div>
+                            <div class="about-info__block-text">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                 the mattis, leo quam aliquet diam
                                 congue is laoreet elit metus.
@@ -153,12 +165,12 @@
                         </div>
                     </div>
 
-                    <div class="info__inner-item info__inner-item-3">
-                        <div class="info__inner-block">
-                            <div class="info__inner-block-img info__inner-block-img-3"
+                    <div class="about-info__item about-info__item-3">
+                        <div class="about-info__block">
+                            <div class="about-info__block-img about-info__block-img-3"
                                 style="background-image: url(images/info-3.png);"></div>
-                            <div class="info__inner-block-title">Buy & Sell Easily</div>
-                            <div class="info__inner-block-text">
+                            <div class="about-info__block-title">Buy & Sell Easily</div>
+                            <div class="about-info__block-text">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                 the mattis, leo quam aliquet diam
                                 congue is laoreet elit metus.
@@ -170,67 +182,69 @@
             </div>
         </section>
 
-        <section class="big-slider">
+        <section class="featured-product">
             <div class="container">
-                <div class="big-slider__inner">
+                <div class="featured-product__inner">
 
-                    <div class="big-slider__inner-block bg-block">
+                    <div class="featured-product__block bg-block">
                         <div>Weekly Featured Products</div>
                         <div class="slider-button"></div>
                     </div>
 
-                    <div class="big-slider__wrapper">
+                    <div class="featured-product__wrapper">
 
-                        <div class="big-slider__inner-slide">
-                            <div class="big-slider__inner-main">
-                                <div class="big-slider__inner-hover">
-                                    <div class="big-slider__inner-hover-box">
-                                        <a class="category__wrapper-hover-link big-slider__inner-hover-link-1"
+                        <div class="featured-product__slide">
+                            <div class="featured-product__main">
+                                <div class="featured-product__opacity">
+                                    <div class="featured-product__opacity-box">
+                                        <a class="category-product__opacity-link featured-product__opacity-left"
                                             href="#">
                                             More Info
                                         </a>
-                                        <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
+                                        <a class="category-product__opacity-link category-product__opacity-right"
                                             href="#">
                                             Live Demo
                                         </a>
                                     </div>
                                 </div>
-                                <img class="big-slider__inner-slide-img" src="images/bg.png" alt="product">
+                                <img class="featured-product__main-img" src="images/bg.png" alt="product">
                             </div>
-                            <div class="big-slider__inner-box">
+                            <div class="featured-product__box">
 
-                                <div class="big-slider__inner-box-title">One Page Resume Template</div>
-                                <div class="big-slider__inner-box-info">
-                                    <a class="big-slider__inner-box-link-user" href="#">
-                                        <img class="big-slider__inner-box-avatar" src="images/user.png" alt="avatar">
+                                <div class="featured-product__box-title">One Page Resume Template</div>
+                                <div class="featured-product__box-info">
+                                    <a class="featured-product__box-user" href="#">
+                                        <img class="featured-product__box-avatar" src="images/hade.jpg" alt="avatar">
                                         <div>AazTech</div>
                                     </a>
-                                    <a class="big-slider__inner-box-link-plugin" href="#">
-                                        <div class="big-slider__inner-box-wordpress"
+                                    <a class="featured-product__box-plugin" href="#">
+                                        <div class="featured-product__box-wordpress"
                                             style="background-image: url(images/wordpress.svg);"></div>
                                         <div>WordPress</div>
                                     </a>
                                 </div>
-                                <div class="big-slider__inner-box-text">
+                                <div class="featured-product__box-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the
                                     mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
                                     pharetra,
                                     justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
                                 </div>
-                                <div class="big-slider__inner-box-link">
-                                    <a class="big-slider__inner-box-link-item" href="#">website</a>
-                                    <a class="big-slider__inner-box-link-item" href="#">plugin</a>
-                                    <a class="big-slider__inner-box-link-item" href="#">landing page</a>
+
+                                <div class="featured-product__link">
+                                    <a class="featured-product__link-item" href="#">website</a>
+                                    <a class="featured-product__link-item" href="#">plugin</a>
+                                    <a class="featured-product__link-item" href="#">landing page</a>
                                 </div>
-                                <div class="big-slider__inner-box-rating">
-                                    <a class="big-slider__inner-box-rating-price" href="#">$10 - $50</a>
-                                    <a class="big-slider__inner-box-rating-like" href="#">
-                                        <span class="lnr lnr-heart big-slider__inner-like"></span>
+
+                                <div class="featured-product__rating">
+                                    <a class="featured-product__rating-price" href="#">$10 - $50</a>
+                                    <a class="featured-product__rating-like" href="#">
+                                        <span class="lnr lnr-heart featured-product__like-icon"></span>
                                         46
                                     </a>
-                                    <a class="big-slider__inner-box-rating-sell" href="#">
-                                        <span class="lnr lnr-cart big-slider__inner-basket"></span>
+                                    <a class="featured-product__rating-sell" href="#">
+                                        <span class="lnr lnr-cart featured-product__rating-basket"></span>
                                         634
                                     </a>
                                     <div class="rate-star"></div>
@@ -238,56 +252,58 @@
                             </div>
                         </div>
 
-                        <div class="big-slider__inner-slide">
-                            <div class="big-slider__inner-main">
-                                <div class="big-slider__inner-hover">
-                                    <div class="big-slider__inner-hover-box">
-                                        <a class="category__wrapper-hover-link big-slider__inner-hover-link-1"
+                        <div class="featured-product__slide">
+                            <div class="featured-product__main">
+                                <div class="featured-product__opacity">
+                                    <div class="featured-product__opacity-box">
+                                        <a class="category-product__opacity-link featured-product__opacity-left"
                                             href="#">
                                             More Info
                                         </a>
-                                        <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
+                                        <a class="category-product__opacity-link category-product__opacity-right"
                                             href="#">
                                             Live Demo
                                         </a>
                                     </div>
                                 </div>
-                                <img class="big-slider__inner-slide-img" src="images/bg.png" alt="product">
+                                <img class="featured-product__main-img" src="images/bg.png" alt="product">
                             </div>
-                            <div class="big-slider__inner-box">
+                            <div class="featured-product__box">
 
-                                <div class="big-slider__inner-box-title">One Page Resume Template</div>
-                                <div class="big-slider__inner-box-info">
-                                    <a class="big-slider__inner-box-link-user" href="#">
-                                        <img class="big-slider__inner-box-avatar" src="images/user.png" alt="avatar">
+                                <div class="featured-product__box-title">One Page Resume Template</div>
+                                <div class="featured-product__box-info">
+                                    <a class="featured-product__box-user" href="#">
+                                        <img class="featured-product__box-avatar" src="images/hade.jpg" alt="avatar">
                                         <div>AazTech</div>
                                     </a>
-                                    <a class="big-slider__inner-box-link-plugin" href="#">
-                                        <div class="big-slider__inner-box-wordpress"
+                                    <a class="featured-product__box-plugin" href="#">
+                                        <div class="featured-product__box-wordpress"
                                             style="background-image: url(images/wordpress.svg);"></div>
                                         <div>WordPress</div>
                                     </a>
                                 </div>
-                                <div class="big-slider__inner-box-text">
+                                <div class="featured-product__box-text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the
                                     mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
                                     pharetra,
                                     justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
                                 </div>
-                                <div class="big-slider__inner-box-link">
-                                    <a class="big-slider__inner-box-link-item" href="#">website</a>
-                                    <a class="big-slider__inner-box-link-item" href="#">plugin</a>
-                                    <a class="big-slider__inner-box-link-item" href="#">landing page</a>
+
+                                <div class="featured-product__link">
+                                    <a class="featured-product__link-item" href="#">website</a>
+                                    <a class="featured-product__link-item" href="#">plugin</a>
+                                    <a class="featured-product__link-item" href="#">landing page</a>
                                 </div>
-                                <div class="big-slider__inner-box-rating">
-                                    <a class="big-slider__inner-box-rating-price" href="#">$10 - $50</a>
-                                    <a class="big-slider__inner-box-rating-like" href="#">
-                                        <span class="lnr lnr-heart big-slider__inner-like"></span>
+
+                                <div class="featured-product__rating">
+                                    <a class="featured-product__rating-price" href="#">$10 - $50</a>
+                                    <a class="featured-product__rating-like" href="#">
+                                        <span class="lnr lnr-heart featured-product__like-icon"></span>
                                         46
                                     </a>
-                                    <a class="big-slider__inner-box-rating-sell" href="#">
-                                        <span class="lnr lnr-cart big-slider__inner-basket"></span>
+                                    <a class="featured-product__rating-sell" href="#">
+                                        <span class="lnr lnr-cart featured-product__rating-basket"></span>
                                         634
                                     </a>
                                     <div class="rate-star"></div>
@@ -300,353 +316,439 @@
             </div>
         </section>
 
-        <section class="category">
+        <section class="category-product">
             <div class="container">
-                <div class="category__inner">
+                <div class="category-product__inner">
 
-                    <div class="category__inner-block bg-block">
+                    <div class="category-product__block bg-block">
+
                         <div>Newest Release Products</div>
-                        <div class="category__inner-block-filter">
-                            <div class="category__inner-block-text">Filter by:</div>
-                            <div class="category__inner-block-dots"></div>
+
+                        <div class="category-product__filter">
+                            <div class="category-product__filter-text">Filter by:</div>
+                            <div class="category-product__filter-dots"></div>
                         </div>
-                        <div class="category__inner-block-filter-hover">
-                            <div class="category__inner-block-filter-hover-item-1">
-                                <div class="category__inner-block-filter-hover-item"></div>
+
+                        <div class="category-product__hover">
+                            <div class="category-product__hover-box">
+                                <div class="category-product__hover-item"></div>
                             </div>
-                            <ul class="category__inner-block-filter-hover-menu">
-                                <li class="category__inner-block-filter-hover-list"><a href="#">Trending items</a></li>
-                                <li class="category__inner-block-filter-hover-list"><a href="#">Best seller</a></li>
-                                <li class="category__inner-block-filter-hover-list"><a href="#">Best rating</a></li>
-                                <li class="category__inner-block-filter-hover-list"><a href="#">Low price</a></li>
-                                <li class="category__inner-block-filter-hover-list"><a href="#">High price</a></li>
+                            <ul class="category-product__hover-menu">
+                                <li class="category-product__hover-list"><a href="#">Trending items</a></li>
+                                <li class="category-product__hover-list"><a href="#">Best seller</a></li>
+                                <li class="category-product__hover-list"><a href="#">Best rating</a></li>
+                                <li class="category-product__hover-list"><a href="#">Low price</a></li>
+                                <li class="category-product__hover-list"><a href="#">High price</a></li>
                             </ul>
                         </div>
+                        
                     </div>
 
-                    <div class="category__wrapper">
+                    <div class="category-product__wrapper">
 
-                        <div class="category__wrapper-item">
-                            <buttons class="category__wrapper-item-btn" type="button" data-filter=".category-plugin">
+                        <div class="category-product__menu">
+                            <buttons class="category-product__menu-btn" type="button" data-filter=".category-plugin">
                                 Plugins
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button" data-filter=".category-wordpress">
+                            <buttons class="category-product__menu-btn" type="button" data-filter=".category-wordpress">
                                 WordPress
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button"
-                                data-filter=".category-sitetemplate">
+                            <buttons class="category-product__menu-btn" type="button"
+                                data-filter=".category-product-sitetemplate">
                                 Site Template
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button"
-                                data-filter=".category-psdtemplate">
+                            <buttons class="category-product__menu-btn" type="button"
+                                data-filter=".category-product-psdtemplate">
                                 PSD Template
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button" data-filter=".category-joomla">
+                            <buttons class="category-product__menu-btn" type="button" data-filter=".category-joomla">
                                 Joomla
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button"
+                            <buttons class="category-product__menu-btn" type="button"
                                 data-filter=".category-userinterface">
                                 User Interface
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button"
+                            <buttons class="category-product__menu-btn" type="button"
                                 data-filter=".category-landingpage">
                                 Landing Page
                             </buttons>
 
-                            <buttons class="category__wrapper-item-btn" type="button" data-filter=".category-software">
+                            <buttons class="category-product__menu-btn" type="button" data-filter=".category-software">
                                 Software
                             </buttons>
                         </div>
 
-                        <div class="category__wrapper-block">
+                        <div class="category-product__block">
 
-                            <div class="category__wrapper-block-item mix category-wordpress category-joomla category-software category-sitetemplate category-landingpage"
+                            <div class="category-product__block-item mix category-wordpress category-joomla category-software category-sitetemplate category-landingpage"
                                 data-order="1">
-                                <div class="category__wrapper-main">
-                                    <div class="category__wrapper-hover">
-                                        <div class="category__wrapper-hover-box">
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-1"
-                                                href="#">More Info</a>
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
-                                                href="#">Live Demo</a>
+
+                                <div class="category-product__main">
+
+                                    <div class="category-product__opacity">
+                                        <div class="category-product__opacity-box">
+                                            <a class="category-product__opacity-link category-product__opacity-left"
+                                                href="#">
+                                                More Info
+                                            </a>
+                                            <a class="category-product__opacity-link category-product__opacity-right"
+                                                href="#">
+                                                Live Demo
+                                            </a>
                                         </div>
                                     </div>
-                                    <img class="category__wrapper-img" src="images/bg.png" alt="product">
+
+                                    <img class="category-product__main-img" src="images/bg.png" alt="product">
+                                    
                                 </div>
 
-                                <div class="category__wrapper-block-content">
-                                    <div class="category__wrapper-block-title">E-commerce Shopping Cart</div>
-                                    <div class="category__wrapper-block-info">
-                                        <a class="category__wrapper-block-info-user" href="#">
-                                            <img class="category__wrapper-block-info-avatar" src="images/user.png"
+                                <div class="category-product__content">
+                                    <div class="category-product__content-title">
+                                        E-commerce Shopping Cart
+                                    </div>
+
+                                    <div class="category-product__content-info">
+                                        <a class="category-product__content-user" href="#">
+                                            <img class="category-product__content-avatar" src="images/gasmask.jpg"
                                                 alt="avatar">
                                             <div>Theme-Valley</div>
                                         </a>
-                                        <a class="category__wrapper-block-info-plugin" href="#">
-                                            <div class="category__wrapper-block-icon category__wrapper-block-wordpress"
+                                        <a class="category-product__content-plugin" href="#">
+                                            <div class="category-product__content-icon category-product__content-wordpress"
                                                 style="background-image: url(images/wordpress.svg);"></div>
                                             <div>Plugin</div>
                                         </a>
                                     </div>
-                                    <div class="category__wrapper-block-info-text">
+                                    <div class="category-product__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="category__wrapper-block-sell">
-                                    <a class="category__wrapper-block-price" href="#">$20</a>
-                                    <a class="category__wrapper-block-like" href="#">
-                                        <span class="lnr lnr-heart category__wrapper-like"></span>
-                                        <div class="category__wrapper-block-number">90</div>
+
+                                <div class="category-product__sell">
+                                    <a class="category-product__sell-price" href="#">$20</a>
+                                    <a class="category-product__sell-like" href="#">
+                                        <span class="lnr lnr-heart category-product__like-icon"></span>
+                                        <div class="category-product__sell-number">
+                                            90
+                                        </div>
                                     </a>
-                                    <a class="category__wrapper-block-basket" href="#">
-                                        <span class="lnr lnr-cart category__wrapper-basket"></span>
+                                    <a class="category-product__sell-basket" href="#">
+                                        <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         246
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="category__wrapper-block-item mix category-userinterface category-psdtemplate category-plugin"
+                            <div class="category-product__block-item mix category-wordpress category-joomla category-software category-sitetemplate category-landingpage"
                                 data-order="2">
-                                <div class="category__wrapper-main">
-                                    <div class="category__wrapper-hover">
-                                        <div class="category__wrapper-hover-box">
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-1"
-                                                href="#">More Info</a>
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
-                                                href="#">Live Demo</a>
+
+                                <div class="category-product__main">
+
+                                    <div class="category-product__opacity">
+                                        <div class="category-product__opacity-box">
+                                            <a class="category-product__opacity-link category-product__opacity-left"
+                                                href="#">
+                                                More Info
+                                            </a>
+                                            <a class="category-product__opacity-link category-product__opacity-right"
+                                                href="#">
+                                                Live Demo
+                                            </a>
                                         </div>
                                     </div>
-                                    <img class="category__wrapper-img" src="images/bg.png" alt="product">
+
+                                    <img class="category-product__main-img" src="images/bg.png" alt="product">
+                                    
                                 </div>
 
-                                <div class="category__wrapper-block-content">
-                                    <div class="category__wrapper-block-title">Marketify Coffee Shop</div>
-                                    <div class="category__wrapper-block-info">
-                                        <a class="category__wrapper-block-info-user" href="#">
-                                            <img class="category__wrapper-block-info-avatar" src="images/user.png"
+                                <div class="category-product__content">
+                                    <div class="category-product__content-title">
+                                        Marketify Coffee Shop
+                                    </div>
+
+                                    <div class="category-product__content-info">
+                                        <a class="category-product__content-user" href="#">
+                                            <img class="category-product__content-avatar" src="images/gasmask.jpg"
                                                 alt="avatar">
                                             <div>EchoTheme</div>
                                         </a>
-                                        <a class="category__wrapper-block-info-plugin" href="#">
-                                            <div class="category__wrapper-block-icon category__wrapper-block-psd"
+                                        <a class="category-product__content-plugin" href="#">
+                                            <div class="category-product__content-icon category-product__content-psd"
                                                 style="background-image: url(images/psd.svg);"></div>
                                             <div>PSD</div>
                                         </a>
                                     </div>
-                                    <div class="category__wrapper-block-info-text">
+                                    <div class="category-product__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="category__wrapper-block-sell">
-                                    <a class="category__wrapper-block-price" href="#">$18</a>
-                                    <a class="category__wrapper-block-like" href="#">
-                                        <span class="lnr lnr-heart category__wrapper-like"></span>
-                                        <div class="category__wrapper-block-number">48</div>
+
+                                <div class="category-product__sell">
+                                    <a class="category-product__sell-price" href="#">$18</a>
+                                    <a class="category-product__sell-like" href="#">
+                                        <span class="lnr lnr-heart category-product__like-icon"></span>
+                                        <div class="category-product__sell-number">
+                                            48
+                                        </div>
                                     </a>
-                                    <a class="category__wrapper-block-basket" href="#">
-                                        <span class="lnr lnr-cart category__wrapper-basket"></span>
+                                    <a class="category-product__sell-basket" href="#">
+                                        <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         50
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="category__wrapper-block-item mix category-userinterface category-landingpage category-joomla category-psdtemplate category-plugin"
+                            <div class="category-product__block-item mix category-userinterface category-landingpage category-joomla category-psdtemplate category-plugin"
                                 data-order="3">
-                                <div class="category__wrapper-main">
-                                    <div class="category__wrapper-hover">
-                                        <div class="category__wrapper-hover-box">
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-1"
-                                                href="#">More Info</a>
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
-                                                href="#">Live Demo</a>
+
+                                <div class="category-product__main">
+
+                                    <div class="category-product__opacity">
+                                        <div class="category-product__opacity-box">
+                                            <a class="category-product__opacity-link category-product__opacity-left"
+                                                href="#">
+                                                More Info
+                                            </a>
+                                            <a class="category-product__opacity-link category-product__opacity-right"
+                                                href="#">
+                                                Live Demo
+                                            </a>
                                         </div>
                                     </div>
-                                    <img class="category__wrapper-img" src="images/bg.png" alt="product">
+
+                                    <img class="category-product__main-img" src="images/bg.png" alt="product">
+
                                 </div>
 
-                                <div class="category__wrapper-block-content">
-                                    <div class="category__wrapper-block-title">Bryson - Portfolio Template</div>
-                                    <div class="category__wrapper-block-info">
-                                        <a class="category__wrapper-block-info-user" href="#">
-                                            <img class="category__wrapper-block-info-avatar" src="images/user.png"
+                                <div class="category-product__content">
+                                    <div class="category-product__content-title">
+                                        Bryson - Portfolio Template
+                                    </div>
+
+                                    <div class="category-product__content-info">
+                                        <a class="category-product__content-user" href="#">
+                                            <img class="category-product__content-avatar" src="images/gasmask.jpg"
                                                 alt="avatar">
                                             <div>Artcorner</div>
                                         </a>
-                                        <a class="category__wrapper-block-info-plugin" href="#">
-                                            <div class="category__wrapper-block-icon category__wrapper-block-html"
+                                        <a class="category-product__content-plugin" href="#">
+                                            <div class="category-product__content-icon category-product__content-icon-html"
                                                 style="background-image: url(images/html.png);"></div>
                                             <div>HTML</div>
                                         </a>
                                     </div>
-                                    <div class="category__wrapper-block-info-text">
+                                    <div class="category-product__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
 
-                                <div class="category__wrapper-block-sell">
-                                    <a class="category__wrapper-block-price" href="#">$10</a>
-                                    <a class="category__wrapper-block-like category__wrapper-block-star" href="#">
-                                        <span class="lnr lnr-heart category__wrapper-like"></span>
-                                        <div class="category__wrapper-block-number">56</div>
+                                <div class="category-product__sell">
+                                    <a class="category-product__sell-price" href="#">$10</a>
+                                    <a class="category-product__sell-like category-product__sell-star" href="#">
+                                        <span class="lnr lnr-heart category-product__like-icon"></span>
+                                        <div class="category-product__sell-number">
+                                            56
+                                        </div>
                                     </a>
-                                    <div class="rate-star category__wrapper-rating-star"></div>
-                                    <a class="category__wrapper-block-basket" href="#">
-                                        <span class="lnr lnr-cart category__wrapper-basket"></span>
+                                    <div class="rate-star category-product__sell-rating"></div>
+                                    <a class="category-product__sell-basket" href="#">
+                                        <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         68
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="category__wrapper-block-item mix category-wordpress category-joomla category-sitetemplate category-software category-landingpage"
+                            <div class="category-product__block-item mix category-wordpress category-joomla category-software category-sitetemplate category-landingpage"
                                 data-order="1">
-                                <div class="category__wrapper-main">
-                                    <div class="category__wrapper-hover">
-                                        <div class="category__wrapper-hover-box">
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-1"
-                                                href="#">More Info</a>
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
-                                                href="#">Live Demo</a>
+
+                                <div class="category-product__main">
+
+                                    <div class="category-product__opacity">
+                                        <div class="category-product__opacity-box">
+                                            <a class="category-product__opacity-link category-product__opacity-left"
+                                                href="#">
+                                                More Info
+                                            </a>
+                                            <a class="category-product__opacity-link category-product__opacity-right"
+                                                href="#">
+                                                Live Demo
+                                            </a>
                                         </div>
                                     </div>
-                                    <img class="category__wrapper-img" src="images/bg.png" alt="product">
+
+                                    <img class="category-product__main-img" src="images/bg.png" alt="product">
+                                    
                                 </div>
 
-                                <div class="category__wrapper-block-content">
-                                    <div class="category__wrapper-block-title">E-commerce Shopping Cart</div>
-                                    <div class="category__wrapper-block-info">
-                                        <a class="category__wrapper-block-info-user" href="#">
-                                            <img class="category__wrapper-block-info-avatar" src="images/user.png"
+                                <div class="category-product__content">
+                                    <div class="category-product__content-title">
+                                        E-commerce Shopping Cart
+                                    </div>
+
+                                    <div class="category-product__content-info">
+                                        <a class="category-product__content-user" href="#">
+                                            <img class="category-product__content-avatar" src="images/gasmask.jpg"
                                                 alt="avatar">
                                             <div>Theme-Valley</div>
                                         </a>
-                                        <a class="category__wrapper-block-info-plugin" href="#">
-                                            <div class="category__wrapper-block-icon category__wrapper-block-wordpress"
+                                        <a class="category-product__content-plugin" href="#">
+                                            <div class="category-product__content-icon category-product__content-wordpress"
                                                 style="background-image: url(images/wordpress.svg);"></div>
                                             <div>Plugin</div>
                                         </a>
                                     </div>
-                                    <div class="category__wrapper-block-info-text">
+                                    <div class="category-product__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="category__wrapper-block-sell">
-                                    <a class="category__wrapper-block-price" href="#">$20</a>
-                                    <a class="category__wrapper-block-like" href="#">
-                                        <span class="lnr lnr-heart category__wrapper-like"></span>
-                                        <div class="category__wrapper-block-number">90</div>
+
+                                <div class="category-product__sell">
+                                    <a class="category-product__sell-price" href="#">$20</a>
+                                    <a class="category-product__sell-like" href="#">
+                                        <span class="lnr lnr-heart category-product__like-icon"></span>
+                                        <div class="category-product__sell-number">
+                                            90
+                                        </div>
                                     </a>
-                                    <a class="category__wrapper-block-basket" href="#">
-                                        <span class="lnr lnr-cart category__wrapper-basket"></span>
+                                    <a class="category-product__sell-basket" href="#">
+                                        <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         246
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="category__wrapper-block-item mix category-userinterface category-psdtemplate category-sitetemplate category-plugin"
+                            <div class="category-product__block-item mix category-wordpress category-joomla category-software category-sitetemplate category-landingpage"
                                 data-order="2">
-                                <div class="category__wrapper-main">
-                                    <div class="category__wrapper-hover">
-                                        <div class="category__wrapper-hover-box">
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-1"
-                                                href="#">More Info</a>
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
-                                                href="#">Live Demo</a>
+
+                                <div class="category-product__main">
+
+                                    <div class="category-product__opacity">
+                                        <div class="category-product__opacity-box">
+                                            <a class="category-product__opacity-link category-product__opacity-left"
+                                                href="#">
+                                                More Info
+                                            </a>
+                                            <a class="category-product__opacity-link category-product__opacity-right"
+                                                href="#">
+                                                Live Demo
+                                            </a>
                                         </div>
                                     </div>
-                                    <img class="category__wrapper-img" src="images/bg.png" alt="product">
+
+                                    <img class="category-product__main-img" src="images/bg.png" alt="product">
+                                    
                                 </div>
 
-                                <div class="category__wrapper-block-content">
-                                    <div class="category__wrapper-block-title">Marketify Coffee Shop</div>
-                                    <div class="category__wrapper-block-info">
-                                        <a class="category__wrapper-block-info-user" href="#">
-                                            <img class="category__wrapper-block-info-avatar" src="images/user.png"
+                                <div class="category-product__content">
+                                    <div class="category-product__content-title">
+                                        Marketify Coffee Shop
+                                    </div>
+
+                                    <div class="category-product__content-info">
+                                        <a class="category-product__content-user" href="#">
+                                            <img class="category-product__content-avatar" src="images/gasmask.jpg"
                                                 alt="avatar">
                                             <div>EchoTheme</div>
                                         </a>
-                                        <a class="category__wrapper-block-info-plugin" href="#">
-                                            <div class="category__wrapper-block-icon category__wrapper-block-psd"
+                                        <a class="category-product__content-plugin" href="#">
+                                            <div class="category-product__content-icon category-product__content-psd"
                                                 style="background-image: url(images/psd.svg);"></div>
                                             <div>PSD</div>
                                         </a>
                                     </div>
-                                    <div class="category__wrapper-block-info-text">
+                                    <div class="category-product__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
-                                <div class="category__wrapper-block-sell">
-                                    <a class="category__wrapper-block-price" href="#">$18</a>
-                                    <a class="category__wrapper-block-like" href="#">
-                                        <span class="lnr lnr-heart category__wrapper-like"></span>
-                                        <div class="category__wrapper-block-number">48</div>
+
+                                <div class="category-product__sell">
+                                    <a class="category-product__sell-price" href="#">$18</a>
+                                    <a class="category-product__sell-like" href="#">
+                                        <span class="lnr lnr-heart category-product__like-icon"></span>
+                                        <div class="category-product__sell-number">
+                                            48
+                                        </div>
                                     </a>
-                                    <a class="category__wrapper-block-basket" href="#">
-                                        <span class="lnr lnr-cart category__wrapper-basket"></span>
+                                    <a class="category-product__sell-basket" href="#">
+                                        <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         50
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="category__wrapper-block-item mix category-userinterface category-landingpage category-joomla category-psdtemplate category-plugin"
+                            <div class="category-product__block-item mix category-userinterface category-landingpage category-joomla category-psdtemplate category-plugin"
                                 data-order="3">
-                                <div class="category__wrapper-main">
-                                    <div class="category__wrapper-hover">
-                                        <div class="category__wrapper-hover-box">
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-1"
-                                                href="#">More Info</a>
-                                            <a class="category__wrapper-hover-link category__wrapper-hover-link-2"
-                                                href="#">Live Demo</a>
+
+                                <div class="category-product__main">
+
+                                    <div class="category-product__opacity">
+                                        <div class="category-product__opacity-box">
+                                            <a class="category-product__opacity-link category-product__opacity-left"
+                                                href="#">
+                                                More Info
+                                            </a>
+                                            <a class="category-product__opacity-link category-product__opacity-right"
+                                                href="#">
+                                                Live Demo
+                                            </a>
                                         </div>
                                     </div>
-                                    <img class="category__wrapper-img" src="images/bg.png" alt="product">
+
+                                    <img class="category-product__main-img" src="images/bg.png" alt="product">
+
                                 </div>
 
-                                <div class="category__wrapper-block-content">
-                                    <div class="category__wrapper-block-title">Bryson - Portfolio Template</div>
-                                    <div class="category__wrapper-block-info">
-                                        <a class="category__wrapper-block-info-user" href="#">
-                                            <img class="category__wrapper-block-info-avatar" src="images/user.png"
+                                <div class="category-product__content">
+                                    <div class="category-product__content-title">
+                                        Bryson - Portfolio Template
+                                    </div>
+
+                                    <div class="category-product__content-info">
+                                        <a class="category-product__content-user" href="#">
+                                            <img class="category-product__content-avatar" src="images/gasmask.jpg"
                                                 alt="avatar">
                                             <div>Artcorner</div>
                                         </a>
-                                        <a class="category__wrapper-block-info-plugin" href="#">
-                                            <div class="category__wrapper-block-icon category__wrapper-block-html"
+                                        <a class="category-product__content-plugin" href="#">
+                                            <div class="category-product__content-icon category-product__content-icon-html"
                                                 style="background-image: url(images/html.png);"></div>
                                             <div>HTML</div>
                                         </a>
                                     </div>
-                                    <div class="category__wrapper-block-info-text">
+                                    <div class="category-product__content-text">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </div>
                                 </div>
 
-                                <div class="category__wrapper-block-sell">
-                                    <a class="category__wrapper-block-price" href="#">$10</a>
-                                    <a class="category__wrapper-block-like category__wrapper-block-star" href="#">
-                                        <span class="lnr lnr-heart category__wrapper-like"></span>
-                                        <div class="category__wrapper-block-number">56</div>
+                                <div class="category-product__sell">
+                                    <a class="category-product__sell-price" href="#">$10</a>
+                                    <a class="category-product__sell-like category-product__sell-star" href="#">
+                                        <span class="lnr lnr-heart category-product__like-icon"></span>
+                                        <div class="category-product__sell-number">
+                                            56
+                                        </div>
                                     </a>
-                                    <div class="rate-star category__wrapper-rating-star"></div>
-                                    <a class="category__wrapper-block-basket" href="#">
-                                        <span class="lnr lnr-cart category__wrapper-basket"></span>
+                                    <div class="rate-star category-product__sell-rating"></div>
+                                    <a class="category-product__sell-basket" href="#">
+                                        <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         68
                                     </a>
                                 </div>
@@ -656,7 +758,7 @@
 
                     </div>
 
-                    <button class="category__bottom-btn rectangle" data-filter="all">
+                    <button class="category-product__bottom-btn rectangle" data-filter="all">
                         All New Item
                     </button>
 
