@@ -18,6 +18,12 @@ body {
     padding: 0 15px;
 }
 
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 .visually-hidden {
     position: absolute;
 

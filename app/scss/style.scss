@@ -750,6 +750,7 @@
     // .big-slider__inner-box-link-user
 
     &__box-user {
+        max-width: 120px;
         font-weight: 400;
         text-decoration: none;
         font-size: 15px;
@@ -925,7 +926,8 @@
     background-color: transparent;
     border: none;
     top: -116px;
-    // outline: transparent;
+    outline: transparent;
+    cursor: pointer;
 }
 
 .big-slide__slick-prev {
@@ -939,6 +941,7 @@
 .big-slide__arrow {
     font-size: 14px;
     color: #fff;
+
 }
 
 // Start Category
@@ -961,7 +964,6 @@
 
     // .category__filter
  
-
 	&__filter {
         display: flex;
         cursor: pointer;
@@ -1031,7 +1033,6 @@
         padding: 0;
     }
 
-
 	// .category__inner-block-filter-hover-text
 
 	&__hover-list {
@@ -1079,6 +1080,8 @@
         color: #747b86;
         display: inline-block;
         transition: all .4s;
+        border: none;
+        outline: transparent;
 
         & + .category-product__menu-btn {
             margin-left: 10px;
@@ -1252,6 +1255,7 @@
     // .category__wrapper-block-link-user
 
     &__content-user {
+        max-width: 138px;
         display: flex;
         align-items: center;
         font-weight: 400;
@@ -1331,7 +1335,9 @@
     // .category__wrapper-block-price
 
     &__sell-price {
+        max-width: 70px;
         color: $blue;
+        font-weight: 500;
         background-color: #e6f1fd;
         padding: 6px 17px;
         border-radius: 25px;
@@ -1418,3 +1424,6 @@
     }
 } 
 
+
+
+  
