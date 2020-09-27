@@ -28,26 +28,27 @@
 
                         <a class="header__top-left" href="#">
                             <span class="lnr lnr-alarm header__top-notifications header-icons"></span>
+                            <div class="header__top-left-number header-numbers">25</div>
                         </a>
 
                         <a class="header__top-center" href="#">
                             <span class="lnr lnr-envelope header__top-messages header-icons"></span>
+                            <div class="header__top-center-number header-numbers">6</div>
                         </a>
 
                         <a class="header__top-right" href="#">
                             <span class="lnr lnr-cart header__top-basket header-icons"></span>
+                            <div class="header__top-right-number header-numbers">2</div>
                         </a>
 
-                        <div class="header__top-user">
-                            <a class="header__top-user-link" href="#">
-                                <img class="header__top-photo" src="images/user.png" alt="avatar">
-                                <div class="header__top-name">Taofiq Hakim
-                                    <span class="header__top-price">
-                                        $20.45
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
+                        <a class="header__top-user" href="#">
+                            <img class="header__top-photo" src="images/hade.jpg" alt="avatar">
+                            <div class="header__top-name">Taofiq Hakim
+                                <span class="header__top-price">
+                                    $20.45
+                                </span>
+                            </div>
+                        </a>
 
                     </div>
                 </div>
@@ -58,24 +59,47 @@
             <div class="container">
                 <div class="header__bottom-inner">
 
-                    <nav class="header__bottom-menu">
-                        <ul class="header__bottom-list">
-                            <li class="header__bottom-list-item"><a href="#" class="header__bottom-list-link">Home</a>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+
+                            <li class="header__list-item">
+                                <a href="#" class="header__list-link">
+                                    Home
+                                </a>
                             </li>
-                            <li class="header__bottom-list-item"><a href="#" class="header__bottom-list-link">All
-                                    Products</a></li>
-                            <li class="header__bottom-list-item"><a href="#"
-                                    class="header__bottom-list-link">WordPress</a></li>
-                            <li class="header__bottom-list-item"><a href="#"
-                                    class="header__bottom-list-link">Festures</a></li>
-                            <li class="header__bottom-list-item"><a href="#" class="header__bottom-list-link">Pages</a>
+
+                            <li class="header__list-item">
+                                <a href="#" class="header__list-link">
+                                    All
+                                    Products
+                                </a>
                             </li>
+
+                            <li class="header__list-item">
+                                <a href="#" class="header__list-link">
+                                    WordPress
+                                </a>
+                            </li>
+
+                            <li class="header__list-item">
+                                <a href="#" class="header__list-link">
+                                    Festures
+                                </a>
+                            </li>
+
+                            <li class="header__list-item">
+                                <a href="#" class="header__list-link">
+                                    Pages
+                                </a>
+                            </li>
+
                         </ul>
                     </nav>
 
                     <div class="header__bottom-search">
                         <form>
-                            <label class="header__bottom-label visually-hidden" for="header__bottom-label"></label>
+                            <label class="header__bottom-label visually-hidden" for="header__bottom-label"
+                                name="header__label"></label>
                             <input id="header__bottom-label" class="header__bottom-search-input" type="search"
                                 placeholder="Search product here..." required name="product">
                             <button class="header__bottom-btn" type="submit">
@@ -146,7 +170,7 @@
             <div class="container">
                 <div class="about-info__inner">
 
-                    <div class="about-info__item about-info__item-1">
+                    <div class="about-info__item">
                         <div class="about-info__block">
                             <div class="about-info__block-img about-info__block-img-1"
                                 style="background-image: url(images/info-1.png);"></div>
@@ -159,8 +183,8 @@
                         </div>
                     </div>
 
-                    <div class="about-info__item about-info__item-center">
-                        <div class="about-info__inner-block">
+                    <div class="about-info__item">
+                        <div class="about-info__block">
                             <div class="about-info__block-img about-info__block-img-2"
                                 style="background-image: url(images/info-2.png);"></div>
                             <div class="about-info__block-title">Fully Responsive</div>
@@ -172,7 +196,7 @@
                         </div>
                     </div>
 
-                    <div class="about-info__item about-info__item-3">
+                    <div class="about-info__item">
                         <div class="about-info__block">
                             <div class="about-info__block-img about-info__block-img-3"
                                 style="background-image: url(images/info-3.png);"></div>
@@ -196,8 +220,8 @@
                 <div class="featured-product__inner">
 
                     <div class="featured-product__block bg-block">
-                        <div>Weekly Featured Products</div>
-                        <div class="slider-button"></div>
+                        <div class="bg-block__title">Weekly Featured Products</div>
+                        <div class="featured-product__block-btn slider-button"></div>
                     </div>
 
                     <div class="featured-product__wrapper">
@@ -247,16 +271,16 @@
                                 </div>
 
                                 <div class="featured-product__rating">
-                                    <a class="featured-product__rating-price" href="#">$10 - $50</a>
-                                    <a class="featured-product__rating-like" href="#">
+                                    <div class="featured-product__rating-price" href="#">$10 - $50</div>
+                                    <button class="featured-product__rating-like" href="#">
                                         <span class="lnr lnr-heart featured-product__like-icon"></span>
                                         46
-                                    </a>
-                                    <a class="featured-product__rating-sell" href="#">
+                                    </button>
+                                    <button class="featured-product__rating-sell" href="#">
                                         <span class="lnr lnr-cart featured-product__rating-basket"></span>
                                         634
-                                    </a>
-                                    <div class="rate-star"></div>
+                                    </button>
+                                    <div class="rate-star featured-product__rating-star"></div>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +330,7 @@
                                 </div>
 
                                 <div class="featured-product__rating">
-                                    <a class="featured-product__rating-price" href="#">$10 - $50</a>
+                                    <div class="featured-product__rating-price" href="#">$10 - $50</div>
                                     <a class="featured-product__rating-like" href="#">
                                         <span class="lnr lnr-heart featured-product__like-icon"></span>
                                         46
@@ -315,7 +339,7 @@
                                         <span class="lnr lnr-cart featured-product__rating-basket"></span>
                                         634
                                     </a>
-                                    <div class="rate-star"></div>
+                                    <div class="rate-star featured-product__rating-star"></div>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +357,7 @@
 
                     <div class="category-product__block bg-block">
 
-                        <div>Newest Release Products</div>
+                        <div class="bg-block__title">Newest Release Products</div>
 
                         <div class="category-product__filter">
                             <div class="category-product__filter-text">Filter by:</div>
@@ -444,17 +468,17 @@
                                 </div>
 
                                 <div class="category-product__sell">
-                                    <a class="category-product__sell-price" href="#">$20</a>
-                                    <a class="category-product__sell-like" href="#">
+                                    <div class="category-product__sell-price" href="#">$20</div>
+                                    <button class="category-product__sell-like" href="#">
                                         <span class="lnr lnr-heart category-product__like-icon"></span>
                                         <div class="category-product__sell-number">
                                             90
                                         </div>
-                                    </a>
-                                    <a class="category-product__sell-basket" href="#">
+                                    </button>
+                                    <button class="category-product__sell-basket" href="#">
                                         <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         246
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -505,17 +529,17 @@
                                 </div>
 
                                 <div class="category-product__sell">
-                                    <a class="category-product__sell-price" href="#">$18</a>
-                                    <a class="category-product__sell-like" href="#">
+                                    <div class="category-product__sell-price" href="#">$18</div>
+                                    <button class="category-product__sell-like" href="#">
                                         <span class="lnr lnr-heart category-product__like-icon"></span>
                                         <div class="category-product__sell-number">
                                             48
                                         </div>
-                                    </a>
-                                    <a class="category-product__sell-basket" href="#">
+                                    </button>
+                                    <button class="category-product__sell-basket" href="#">
                                         <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         50
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -566,18 +590,18 @@
                                 </div>
 
                                 <div class="category-product__sell">
-                                    <a class="category-product__sell-price" href="#">$10</a>
-                                    <a class="category-product__sell-like category-product__sell-star" href="#">
+                                    <div class="category-product__sell-price" href="#">$10</div>
+                                    <button class="category-product__sell-like category-product__sell-star" href="#">
                                         <span class="lnr lnr-heart category-product__like-icon"></span>
                                         <div class="category-product__sell-number">
                                             56
                                         </div>
-                                    </a>
-                                    <div class="rate-star category-product__sell-rating"></div>
-                                    <a class="category-product__sell-basket" href="#">
+                                    </button>
+                                    <div class="rate-star"></div>
+                                    <button class="category-product__sell-basket" href="#">
                                         <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         68
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -628,17 +652,17 @@
                                 </div>
 
                                 <div class="category-product__sell">
-                                    <a class="category-product__sell-price" href="#">$20</a>
-                                    <a class="category-product__sell-like" href="#">
+                                    <div class="category-product__sell-price" href="#">$20</div>
+                                    <button class="category-product__sell-like" href="#">
                                         <span class="lnr lnr-heart category-product__like-icon"></span>
                                         <div class="category-product__sell-number">
                                             90
                                         </div>
-                                    </a>
-                                    <a class="category-product__sell-basket" href="#">
+                                    </button>
+                                    <button class="category-product__sell-basket" href="#">
                                         <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         246
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -689,17 +713,17 @@
                                 </div>
 
                                 <div class="category-product__sell">
-                                    <a class="category-product__sell-price" href="#">$18</a>
-                                    <a class="category-product__sell-like" href="#">
+                                    <div class="category-product__sell-price" href="#">$18</div>
+                                    <button class="category-product__sell-like" href="#">
                                         <span class="lnr lnr-heart category-product__like-icon"></span>
                                         <div class="category-product__sell-number">
                                             48
                                         </div>
-                                    </a>
-                                    <a class="category-product__sell-basket" href="#">
+                                    </button>
+                                    <button class="category-product__sell-basket" href="#">
                                         <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         50
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -750,18 +774,18 @@
                                 </div>
 
                                 <div class="category-product__sell">
-                                    <a class="category-product__sell-price" href="#">$10</a>
-                                    <a class="category-product__sell-like category-product__sell-star" href="#">
+                                    <div class="category-product__sell-price" href="#">$10</div>
+                                    <button class="category-product__sell-like category-product__sell-star" href="#">
                                         <span class="lnr lnr-heart category-product__like-icon"></span>
                                         <div class="category-product__sell-number">
                                             56
                                         </div>
-                                    </a>
-                                    <div class="rate-star category-product__sell-rating"></div>
-                                    <a class="category-product__sell-basket" href="#">
+                                    </button>
+                                    <div class="rate-star"></div>
+                                    <button class="category-product__sell-basket" href="#">
                                         <span class="lnr lnr-cart category-product__basket-icon"></span>
                                         68
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -769,19 +793,15 @@
 
                     </div>
 
-                    <button class="category-product__bottom-btn rectangle" data-filter="all">
+                    <button class="category-product__bottom-btn product-btn-link" data-filter="all">
                         All New Item
                     </button>
 
                 </div>
             </div>
         </section>
-        
+
     </main>
-
-
-
-
 
 
 
