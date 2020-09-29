@@ -9,15 +9,15 @@ $(function(){
     $('.featured-product__wrapper').slick({
       arrows: true,
       infinite: true,
-      prevArrow: '<button class="big-slide__slick-arrow big-slide__slick-prev"><span class="lnr lnr-chevron-left big-slide__arrow"></span></button>',
-      nextArrow: '<button class="big-slide__slick-arrow big-slide__slick-next"><span class="lnr lnr-chevron-right big-slide__arrow"></span></button>',
+      prevArrow: '<button class="featured__slick-arrow featured__slick-prev"><span class="lnr lnr-chevron-left featured__arrow"></span></button>',
+      nextArrow: '<button class="featured__slick-arrow featured__slick-next"><span class="lnr lnr-chevron-right featured__arrow"></span></button>',
     });
 
     $('.slider-product__inner').slick({
       infinite: true,
       arrows: true,
-      prevArrow: '<button class="slider-slick-arrow slider-slick-prev"><span class="lnr lnr-chevron-left big-slide__arrow"></span></button>',
-      nextArrow: '<button class="slider-slick-arrow slider-slick-next"><span class="lnr lnr-chevron-right big-slide__arrow"></span></button>',
+      prevArrow: '<button class="slider-slick-arrow slider-slick-prev"><span class="lnr lnr-chevron-left featured__arrow"></span></button>',
+      nextArrow: '<button class="slider-slick-arrow slider-slick-next"><span class="lnr lnr-chevron-right featured__arrow"></span></button>',
       slidesToShow: 3,
       slidesToScroll: 3
     });
