@@ -1,0 +1,138 @@
+.about-martplace {
+    padding: 120px 0;
+    background-color: #fff;
+
+    // .about-martplace__top
+
+    &__top {
+        max-width: 680px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 60px;
+    }
+
+    // .about-martplace__top-title
+
+    &__top-title {
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 25px;
+    }
+
+    // .about-martplace__top-span
+
+    &__top-span {
+        color: $blue;
+    }
+
+    // .about-martplace__top-text
+
+    &__top-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+    }
+
+    // .about-martplace__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // .about-martplace__item
+
+    &__item {
+        max-width: 361px;
+        width: 100%;
+        min-height: 373px;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        padding: 55px 25px 60px;
+        position: relative;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    // .about-martplace__item-number
+
+    &__item-number {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-weight: 300;
+        font-size: 48px;
+        color: rgba(92, 135, 248, 0.2);
+    }
+
+    // .about-martplace__item-image
+
+    &__item-image {
+        width: 130px;
+        height: 90px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    // .about-martplace__item-title
+
+    &__item-title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 31px;
+    }
+
+    // .about-martplace__item-text
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+    }
+
+    // .about-martplace__item-icon
+
+	&__item-icon {
+        font-size: 60px;
+	}
+
+	// .about-martplace__item-one
+
+	&__item-one {
+        color: $blue;
+    }
+    
+    // .about-martplace__item-two
+
+	&__item-two {
+        color: #7f4ec2;
+    }
+    
+    // .about-martplace__item-three
+
+	&__item-three {
+        color: #77de51;
+    }
+    
+    // .about-martplace__item-four
+
+	&__item-four {
+        color: #feb71d;
+    }
+    
+    // .about-martplace__item-five
+
+	&__item-five {
+        color: #58c9e9;
+    }
+    
+    // .about-martplace__item-six
+
+	&__item-six {
+        color: #ff6a6d;
+	}
+}

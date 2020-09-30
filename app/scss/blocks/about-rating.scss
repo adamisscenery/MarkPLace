@@ -1,0 +1,100 @@
+.about-rating {
+    background-color: #212225;
+
+    // .about-rating__inner
+
+    &__inner {
+        // padding: 90px 0;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .about-rating__item
+
+    &__item {
+        max-width: 145px;
+        width: 100%;
+        text-align: center;
+    }
+
+    // .about-rating__item-image
+
+    &__item-image {
+        width: 85px;
+        height: 60px;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    // .about-rating__item-icon
+
+    &__item-icon {
+        font-size: 48px;
+    }
+
+    // .about-rating__item-number
+
+    &__item-number {
+        font-weight: 400;
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    // .about-rating__item-text
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    // .about-rating__item-briefcase
+
+    &__item-briefcase {
+        color: #feb71d;
+    }
+
+    // .about-rating__item-one
+
+    &__item-one {
+        color: #feb71d;
+    }
+
+    // .about-rating__item-download
+
+    &__item-download {
+        color: #58c9e9;
+    }
+
+    // .about-rating__item-two
+
+    &__item-two {
+        color: #58c9e9;
+    }
+
+    // .about-rating__item-smile
+
+    &__item-smile {
+        color: #77de51;
+    }
+
+    // .about-rating__item-three
+
+    &__item-three {
+        color: #77de51;
+    }
+
+    // .about-rating__item-smile
+
+    &__item-users {
+        color: #ff6a6d;
+    }
+
+    // .about-rating__item-three
+
+    &__item-four {
+        color: #ff6a6d;
+    }
+}

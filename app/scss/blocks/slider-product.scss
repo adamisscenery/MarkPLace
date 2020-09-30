@@ -1,0 +1,38 @@
+.slider-product {
+    background-color: #eff1f5;
+    padding: 120px 0;
+
+    // .slider-product__block
+
+    &__block {
+        margin-bottom: 50px;
+    }
+
+    // .slider-product__block-button
+
+    &__block-button {
+        background-color: $blue;
+        max-width: 110px;
+        width: 100%;
+        min-height: 44px; 
+        border-radius: 30px;
+    }
+}
+
+.slider-slick-arrow {
+    position: absolute;
+    top: -113px;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+    outline: transparent;
+    cursor: pointer;
+}
+
+.slider-slick-prev {
+    right: 95px;
+}
+
+.slider-slick-next {
+    right: 45px;
+}

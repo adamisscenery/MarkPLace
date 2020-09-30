@@ -1,0 +1,237 @@
+.footer {
+    background-color: #262b30;
+
+    // .footer__inner
+
+    &__inner {
+        padding-top: 115px;
+        padding-bottom: 125px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+        max-width: 270px;
+        width: 100%;
+        min-height: 290px;
+        font-weight: 400;
+        color: #ababab;
+    }
+
+    // .footer__logo
+
+    &__logo {
+        width: 170px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    // .footer__logo-img
+
+    &__logo-img {
+        margin-right: 7px;
+    }
+
+    // .footer__contacts-text
+
+    &__contacts-text {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
+
+    // .footer__phone
+
+    &__phone {
+        text-decoration: none;
+        color: #ababab;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 20px;
+
+    }
+
+    // .footer__phone-icon
+
+    &__phone-icon {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 11px;
+    }
+
+    // .footer__map
+
+    &__map {
+        text-decoration: none;
+        color: #ababab;
+        font-size: 15px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    // .footer__company
+
+    &__company {
+        max-width: 155px;
+        min-height: 265px;
+        padding-top: 15px;
+    }
+
+    // .footer__list
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    // .footer__list-item
+
+    &__list-item {
+
+        & + .footer__list-item {
+            margin-top: 17px;
+        }
+    }
+
+    // .footer__list-link
+
+    &__list-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        color: #ababab;
+        transition: all .3s;
+
+        &:hover,
+        &:focus {
+            color: $blue;
+        }
+    }
+
+    // .footer__media
+
+    &__media {
+        max-width: 370px;
+        min-height: 280px;
+        font-weight: 400;
+        padding-top: 15px;
+    }
+
+    // .footer__media-text
+
+    &__media-text {
+        font-size: 15px;
+        line-height: 28px;
+        color: #ababab;
+        margin-bottom: 38px;
+    }
+
+    // .footer__search
+
+    &__search {
+        max-width: 360px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    // .footer__search-input
+
+    &__search-input {
+        width: 100%;
+        padding: 20px 115px 20px 31px;
+        border-radius: 40px;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        color: #ababab;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    // .footer__search-btn
+
+    &__search-btn {
+        position: absolute;
+        top: 0;
+        right: -1px;
+        max-width: 110px;
+        width: 100%;
+        color: #fff;
+        background-color: rgb(6, 116, 236);
+        padding: 20px 30px;
+        border-radius: 40px;
+        border: none;
+        outline: transparent;
+        cursor: pointer;
+        transition: all .4s;
+        font-weight: 400;
+        font-size: 15px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $blue;
+            background-color: #212225;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .5);
+        }
+    }
+
+    // .footer__socials
+
+    &__socials {
+        width: 100%;
+    }
+
+    // .footer__socials-link
+
+    &__socials-link {
+        text-decoration: none;
+
+        & + .footer__socials-link {
+            margin-left: 11px;
+        }
+    }
+
+    // .footer__socials-item
+
+    &__socials-item {
+        width: 42px;
+        height: 42px;
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        background-color: #192027;
+        padding: 40px 0 43px 0;
+        font-weight: 400;
+        font-size: 15px;
+        color: #999999;
+    }
+
+    // .footer__bottom-right
+
+    &__bottom-rights {
+        text-align: center;
+    }
+
+    // .footer__bottom-link
+
+    &__bottom-link {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.footer__titles {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+}
